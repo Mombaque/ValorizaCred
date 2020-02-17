@@ -8,7 +8,12 @@ class NavbarButton extends Component {
 
   render() {
     return (
-      <button className="btn btn-primary btn-sn m-2">{this.props.title}</button>
+      <button
+        className="btn btn-primary btn-sn m-2"
+        onClick={this.props.onClick}
+      >
+        {this.props.title}
+      </button>
     );
   }
 }

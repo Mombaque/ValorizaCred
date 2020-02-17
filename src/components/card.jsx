@@ -8,9 +8,11 @@ class Card extends Component {
   }
 
   render() {
+    const style = { margin: "50px" };
     return (
       <div
         class="card bg-light mb-3"
+        style={style}
         //style="max-width: 18rem;"
       >
         <div class="card-header">{this.props.header}</div>

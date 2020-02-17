@@ -4,8 +4,15 @@ import CardImage from "./card-image";
 class CardImageRow extends Component {
   state = {};
   render() {
+    const style = { margin: "10px" };
     return (
-      <div class="row">
+      <div class="row" style={style}>
+        <CardImage
+          imagePath="/images/empresarios.jpg"
+          alt=""
+          title="Capital de giro para pequenas e médias empresas"
+          content="AAAAAAAAAAAAAAAAAAAAA"
+        />
         <CardImage
           imagePath="/images/dinheiro.jpg"
           alt=""
@@ -16,12 +23,6 @@ class CardImageRow extends Component {
           imagePath="/images/casa.jpg"
           alt=""
           title="Empréstimo com garantia de imóvel"
-          content="AAAAAAAAAAAAAAAAAAAAA"
-        />
-        <CardImage
-          imagePath="/images/empresarios.jpg"
-          alt=""
-          title="Capital de giro para pequenas e médias empresas"
           content="AAAAAAAAAAAAAAAAAAAAA"
         />
       </div>
