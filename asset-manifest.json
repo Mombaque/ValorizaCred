@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/valorizacred/static/css/main.fda4f1f4.chunk.css",
+    "main.js": "/valorizacred/static/js/main.d2d4401e.chunk.js",
+    "main.js.map": "/valorizacred/static/js/main.d2d4401e.chunk.js.map",
+    "runtime-main.js": "/valorizacred/static/js/runtime-main.d64cc1b5.js",
+    "runtime-main.js.map": "/valorizacred/static/js/runtime-main.d64cc1b5.js.map",
+    "static/css/2.4f4edfad.chunk.css": "/valorizacred/static/css/2.4f4edfad.chunk.css",
+    "static/js/2.7f1810d2.chunk.js": "/valorizacred/static/js/2.7f1810d2.chunk.js",
+    "static/js/2.7f1810d2.chunk.js.map": "/valorizacred/static/js/2.7f1810d2.chunk.js.map",
+    "index.html": "/valorizacred/index.html",
+    "precache-manifest.c40a0a6b6a717967d30503b0c1ce5b0d.js": "/valorizacred/precache-manifest.c40a0a6b6a717967d30503b0c1ce5b0d.js",
+    "service-worker.js": "/valorizacred/service-worker.js",
+    "static/css/2.4f4edfad.chunk.css.map": "/valorizacred/static/css/2.4f4edfad.chunk.css.map",
+    "static/css/main.fda4f1f4.chunk.css.map": "/valorizacred/static/css/main.fda4f1f4.chunk.css.map",
+    "static/js/2.7f1810d2.chunk.js.LICENSE.txt": "/valorizacred/static/js/2.7f1810d2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d64cc1b5.js",
+    "static/css/2.4f4edfad.chunk.css",
+    "static/js/2.7f1810d2.chunk.js",
+    "static/css/main.fda4f1f4.chunk.css",
+    "static/js/main.d2d4401e.chunk.js"
+  ]
+}
