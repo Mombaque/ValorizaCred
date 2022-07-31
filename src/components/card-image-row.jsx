@@ -13,32 +13,28 @@ class CardImageRow extends Component {
     return (
       <div className="row" style={style}>
         <CardImage
-          imagePath={this.getImage("dinheiro.jpg")}
           alt="dinheiro"
-          title="Empréstimo consignado"
-          content="Para aposentados e pensionistas do INSS e servidores públicos (estaduais, municipais e federais), com atendimento personalizado e condições especiais. Portabilidade com juros reduzidos - já pagou 12 parcelas ou mais? Faça uma simulação sem compromisso e veremos a possibilidade."
+          header="Empréstimo consignado"
+          title="Para aposentados/pensionistas do INSS e servidores públicos"
+          text="Com atendimento personalizado e condições especiais. Portabilidade com juros reduzidos - já pagou 12 parcelas ou mais? Faça uma simulação sem compromisso e veremos a possibilidade."
         />
         <CardImage
-          imagePath={this.getImage("dinheiro.jpg")}
-          // imagePath={this.getImage("empresarios.jpg")}
           alt="empresarios"
-          title="Capital de giro para pequenas e médias empresas"
-          content="Com créditos de R$50.000 até R$500.000 para empresas com no mínimo 5 anos de fundação e com faturamento anual a partir de R$500.000"
+          header="Capital de giro"
+          title="Para pequenas e médias empresas"
+          text="Com créditos de R$50.000 até R$500.000 para empresas com no mínimo 5 anos de fundação e com faturamento anual a partir de R$500.000"
         />
-
         <CardImage
-          imagePath={this.getImage("dinheiro.jpg")}
-          // imagePath={this.getImage("casa.jpg")}
           alt="casa"
-          title="Empréstimo com garantia de imóvel"
-          content="Quer investir, quitar dívidas, reorganizar a vida financeira? Podemos te ajudar. Seu imóvel quitado vale crédito. Com uma das melhores taxas de juros do mercado e até 15 anos para pagar."
+          header="Empréstimo com garantia de imóvel"
+          title="Quer investir, quitar dívidas, reorganizar a vida financeira?"
+          text="Seu imóvel quitado vale crédito. Com uma das melhores taxas de juros do mercado e até 15 anos para pagar."
         />
         <CardImage
-          imagePath={this.getImage("dinheiro.jpg")}
-          // imagePath={this.getImage("carro.jpg")}
           alt="veículo"
-          title="Crédito com garantia de veículo"
-          content="Mais uma solução? Crédito com garantia de veículos ou refinanciamento de veículos - resolva seu problema de dinheiro e continue com seu veículo."
+          header="Crédito com garantia de veículo"
+          title="Possui um veículo e precisa de dinheiro?"
+          text="Resolva seu problema e continue com seu veículo."
         />
       </div>
     );

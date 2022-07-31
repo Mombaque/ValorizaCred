@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Botao from "./botao";
 
 class NavbarButton extends Component {
   state = {};
@@ -9,12 +10,7 @@ class NavbarButton extends Component {
   render() {
     
     return (
-      <button
-        className="btn btn-primary btn-sn m-2"
-        onClick={this.props.onClick}
-      >
-        {this.props.title}
-      </button>
+      <Botao click={this.props.onclick} texto="Conversar no WhatsApp"/>
     );
   }
 }

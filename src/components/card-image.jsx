@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+
 
 class CardImage extends Component {
   state = {};
@@ -8,6 +11,19 @@ class CardImage extends Component {
   }
 
   render() {
+    return (
+      <Card className="text-center">
+        <Card.Header>{this.props.header}</Card.Header>
+        <Card.Body>
+          <Card.Title>{this.props.title}</Card.Title>
+          <Card.Text>
+            {this.props.text}
+          </Card.Text>
+          <Button variant="primary">Conheça</Button>
+        </Card.Body>
+      </Card>
+    );
+  
     return (
       <div className="card">
         <img src={this.props.imagePath} alt={this.props.alt} />

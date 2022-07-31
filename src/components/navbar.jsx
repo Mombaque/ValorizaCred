@@ -1,59 +1,35 @@
 import React, { Component } from "react";
 import NavBarButton from "./navbar-button";
+import Botao from "./botao";
+import Button from 'react-bootstrap/Button';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Container from 'react-bootstrap/Container';
 
-class NavBar extends Component {
-  state = {};
+function getLogo() {
+  const logoStyle = { margin: "30px", alignItems: "center" };
+  return (
+    <div className="row" style={logoStyle}>
+      <span className="navbar-prefixo">Valoriza</span>
+      <span className="navbar-sufixo">Cred</span>
+    </div>
+  );
+}
 
-  constructor(props) {
-    super(props);
-  }
-
-  getLogo() {
-    const logoStyle = { margin: "2px", alignItems: "center" };
-    const prefixStyle = { fontSize: "30px", fontWeight: "bold" };
-    const sufixStyle = {
-      fontSize: "30px",
-      fontWeight: "bold",
-      color: "#335AFF",
-      justifyContent: "center"
-    };
-
-    return (
-      <div className="row" style={logoStyle}>
-        <img src={"/images/logo.jpg"} alt="" />
-        <span style={prefixStyle}>Valoriza</span>
-        <span style={sufixStyle}>Cred</span>
-      </div>
-    );
-  }
-
-  // getLogo() {
-  //   return (
-  //     <div>
-  //       <img src={"/images/logo.jpg"} alt="" />
-  //     </div>
-  //   );
-  //}
-
-  getButtons() {
-    return (
-      <div className="btn-group" role="group" aria-label="Basic example">
-        <NavBarButton
-          title="WhatsApp (15) 99741-3771"
-          onClick={this.props.onClickWhatsApp}
-        />
-      </div>
-    );
-  }
-
-  render() {
-    return (
-      <nav className="navbar sticky-top bg-light justify-content-between">
-        {this.getLogo()}
-        {this.getButtons()}
-      </nav>
-    );
-  }
+function NavBar(props) {
+  return (
+    <Navbar className="navbar">
+        <Container>
+          {getLogo()}            
+          <Nav className="me-auto">
+            <Nav.Link onClick={() => props.mudarPagina(0)}>Produtos</Nav.Link>
+            <Nav.Link onClick={() => props.mudarPagina(1)}>Quem somos</Nav.Link>
+          </Nav>
+          <Button variant="primary" onClick={props.onClickWhatsApp}>Conversar no WhatsApp</Button>
+        </Container>
+      </Navbar>
+  );
 }
 
 export default NavBar;
