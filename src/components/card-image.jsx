@@ -16,10 +16,10 @@ class CardImage extends Component {
         <Card.Header>{this.props.header}</Card.Header>
         <Card.Body>
           <Card.Title>{this.props.title}</Card.Title>
-          <Card.Text>
+          <Card.Text className="card-texto">
             {this.props.text}
           </Card.Text>
-          <Button variant="primary">Conheça</Button>
+          <Button className="card-botao" variant="primary">Conheça</Button>
         </Card.Body>
       </Card>
     );
