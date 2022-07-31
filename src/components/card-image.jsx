@@ -9,14 +9,14 @@ class CardImage extends Component {
 
   render() {
     return (
-      <div class="card">
+      <div className="card">
         <img src={this.props.imagePath} alt={this.props.alt} />
-        <div class="card-body">
-          <h5 class="card-title">{this.props.title}</h5>
-          <p class="card-text">{this.props.content}</p>
-          <a href="#" class="btn btn-primary">
+        <div className="card-body">
+          <h5 className="card-title">{this.props.title}</h5>
+          <p className="card-text">{this.props.content}</p>
+          {/* <a href="#" className="btn btn-primary">
             Faça uma simulação
-          </a>
+          </a> */}
         </div>
       </div>
     );

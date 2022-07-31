@@ -9,25 +9,35 @@ class NavBar extends Component {
   }
 
   getLogo() {
-    const logoStyle = { margin: "2px" };
+    const logoStyle = { margin: "2px", alignItems: "center" };
     const prefixStyle = { fontSize: "30px", fontWeight: "bold" };
     const sufixStyle = {
       fontSize: "30px",
       fontWeight: "bold",
-      color: "#335AFF"
+      color: "#335AFF",
+      justifyContent: "center"
     };
 
     return (
       <div className="row" style={logoStyle}>
+        <img src={"/images/logo.jpg"} alt="" />
         <span style={prefixStyle}>Valoriza</span>
         <span style={sufixStyle}>Cred</span>
       </div>
     );
   }
 
+  // getLogo() {
+  //   return (
+  //     <div>
+  //       <img src={"/images/logo.jpg"} alt="" />
+  //     </div>
+  //   );
+  //}
+
   getButtons() {
     return (
-      <div class="btn-group" role="group" aria-label="Basic example">
+      <div className="btn-group" role="group" aria-label="Basic example">
         <NavBarButton
           title="WhatsApp (15) 99741-3771"
           onClick={this.props.onClickWhatsApp}
@@ -38,7 +48,7 @@ class NavBar extends Component {
 
   render() {
     return (
-      <nav class="navbar sticky-top bg-light justify-content-between">
+      <nav className="navbar sticky-top bg-light justify-content-between">
         {this.getLogo()}
         {this.getButtons()}
       </nav>

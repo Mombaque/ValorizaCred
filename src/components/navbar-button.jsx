@@ -7,6 +7,7 @@ class NavbarButton extends Component {
   }
 
   render() {
+    
     return (
       <button
         className="btn btn-primary btn-sn m-2"
