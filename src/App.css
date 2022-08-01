@@ -8,7 +8,7 @@
   text-align: center;
   border-radius: 1%;
   border: 1px solid #CCC;
-  margin: 5%;
+  margin: 2%;
   padding: 2%;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .navbar{
-  background-color: rgb(226, 227, 227);
+  background-color: rgb(239, 245, 245);
   margin-bottom: 25px;
 }
 
@@ -44,8 +44,8 @@
   margin-right: 10%;
 }
 
-.badge{
-  color:white
+.my-badge{
+  color: white;
 }
 
 body{
@@ -71,15 +71,25 @@ body{
 	margin-top:22px;
 }
 
-.card-texto{
-  height: 100px;
-}
-
-.card-botao{
-  /* position: relative;
-  bottom: 0; */
-}
-
 .cards{
   margin-right: 200%;
 }
+
+.footer{
+  margin-top: 15px;
+  background-color: rgb(239, 245, 245);
+  padding: 1%;
+  display: flex;
+}
+
+.footer-item{
+  flex: 1;
+}
+
+.quem-somos-container{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

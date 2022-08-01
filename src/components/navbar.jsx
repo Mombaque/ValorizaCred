@@ -14,17 +14,45 @@ function getLogo() {
   );
 }
 
+function styleAba(paginaAtual, index) {
+  return paginaAtual == index 
+  ? {backgroundColor: '#335AFF', color: 'white'}
+  : {backgroundColor: 'lightgrey', color: 'black'} ;
+}
+
 function NavBar(props) {
+  function criarItem(desc, index){
+    return {
+      descricao: desc,
+      index: index,
+      style: styleAba(props.paginaAtual, index),
+    }
+  }
+
+  const itemsAba = [
+    criarItem("Produtos", 0),
+    criarItem("Quem somos", 1),
+  ];  
+
   return (
     <Navbar className="navbar">
-        <Container>
-          {getLogo()}            
-          <Nav className="me-auto">
-            <Nav.Link onClick={() => props.mudarPagina(0)}>Produtos</Nav.Link>
-            <Nav.Link onClick={() => props.mudarPagina(1)}>Quem somos</Nav.Link>
-          </Nav>
-          <Button variant="primary" onClick={props.onClickWhatsApp}>Conversar no WhatsApp</Button>
-        </Container>
+      <Container>
+        {getLogo()}  
+        <Nav variant="tabs">
+
+          {itemsAba.map(item => 
+            <Nav.Item style={{backgroundColor: item.style.backgroundColor}}>
+              <Nav.Link 
+                style={{color: item.style.color}} 
+                onClick={() => props.mudarPagina(item.index)}>
+                  {item.descricao}
+              </Nav.Link>
+            </Nav.Item>
+          )}
+
+        </Nav>
+        <Button variant="primary" onClick={props.onClickWhatsApp}>Clique aqui para falar pelo WhatsApp</Button>
+      </Container>
       </Navbar>
   );
 }

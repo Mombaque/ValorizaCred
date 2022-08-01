@@ -1,17 +1,13 @@
 import React from "react";
 
-const classNameDiv = "col-xs-12 col-sm-6 col-md-3";
+const classNameDiv = "footer-item";
 
 const Footer = () => {
   return (
     <div className="footer">
-      <footer className="footer bg-light">
-        <div className="row">
-          {getAddress()}
-          {getHour()}
-          {getContact()}
-        </div>
-      </footer>
+        {getAddress()}
+        {getHour()}
+        {getContact()}
     </div>
   );
 };
@@ -50,8 +46,8 @@ const getContact = () => {
           <span>Contato</span>
         </h5>
         <ul className="thumbnail-widget">
-          <li>{getPhoneItem("(15) 3491-1468")}</li>
-          <li>{getPhoneItem("(15) 99741-3771")}</li>
+          {getPhoneItem("(15) 3491-1468")}
+          {getPhoneItem("(15) 99690-7254")}
         </ul>
       </div>
     </div>
@@ -59,7 +55,7 @@ const getContact = () => {
 };
 
 const getPhoneItem = phone => {
-  let style = { textAlign: "left" };
+  let style = { textAlign: "center" };
   return (
     <div className="thumb-content" style={style}>
       <p>{phone}</p>

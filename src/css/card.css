@@ -1,4 +1,20 @@
 .card {
   width: 500px;
+  height: 300px;
   margin: 5%;
+  background-color: aqua;
+}
+
+.card-header{
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card-title{
+  height: 50px;
+}
+
+.card-texto{
+  height: 90px;
 }

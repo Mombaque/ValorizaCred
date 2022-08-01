@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import CardImage from "./card-image";
+import CardProduto from "./card-produto";
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
@@ -15,7 +15,7 @@ class CardImageRow extends Component {
     return (<Container>
       <Row>
         <Col sm>
-          <CardImage
+          <CardProduto
             alt="dinheiro"
             header="Empréstimo consignado"
             title="Para aposentados/pensionistas do INSS e servidores públicos"
@@ -24,7 +24,7 @@ class CardImageRow extends Component {
         </Col>
 
         <Col sm>
-          <CardImage
+          <CardProduto
             alt="empresarios"
             header="Capital de giro"
             title="Para pequenas e médias empresas"
@@ -33,7 +33,7 @@ class CardImageRow extends Component {
         </Col>
 
         <Col sm>
-          <CardImage
+          <CardProduto
             alt="casa"
             header="Empréstimo com garantia de imóvel"
             title="Quer investir, quitar dívidas, reorganizar a vida financeira?"
@@ -42,7 +42,7 @@ class CardImageRow extends Component {
         </Col>
 
         <Col sm>
-          <CardImage
+          <CardProduto
             alt="veículo"
             header="Crédito com garantia de veículo"
             title="Possui um veículo e precisa de dinheiro?"
