@@ -1,6 +1,5 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
-// import "../css/image.css";
 
 const MainImage = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1000px)" });

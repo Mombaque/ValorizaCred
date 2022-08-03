@@ -4,15 +4,11 @@ import Footer from "./footer";
 import Produtos from "./produtos";
 import QuemSomos from "./quem-somos"
 
-function onClickWhatsApp() {
-  window.open("https://wa.me/5515996907254", "_blank");
-}
-
 function Main(){
   const [page, setPage] = useState(0);
   
-  const mudarPagina = (newPage) => { setPage(newPage);}
-  const children = page == 0 ? <Produtos/> : <QuemSomos/>;
+  const mudarPagina = (newPage) => setPage(newPage);
+  const children = page === 0 ? <Produtos/> : <QuemSomos/>;
   
   return (
     <div className="App">
@@ -23,14 +19,20 @@ function Main(){
 
       <div>{children}</div>
 
-      {/* floating action button */}
-      {/* <a href="#" class="float">
-      <i class="fa fa-plus my-float"></i>
-      </a> */}
+      {/* {floactionWhatsAppButton} */}
 
       <Footer />
     </div>
   );
+}
+
+const floactionWhatsAppButton = 
+  <a href="#" class="float">
+    <i class="fa fa-plus my-float"></i>
+  </a>;
+
+function onClickWhatsApp() {
+  window.open("https://wa.me/5515996907254", "_blank");
 }
 
 export default Main;

@@ -1,8 +1,6 @@
 import React from 'react'
-import CardsImageRow from "./card-image-row";
+import Cards from "./cards";
 import Badge from 'react-bootstrap/Badge';
-import MainImage from "./main-image";
-import Placeholder from 'react-bootstrap/Placeholder'
 
 const Produtos = () => {
     return(
@@ -12,8 +10,7 @@ const Produtos = () => {
                 Conheça nossos produtos
             </Badge>
         </h1>
-        <CardsImageRow/>
-        <MainImage />
+        <Cards/>
     </div>
     )
 }

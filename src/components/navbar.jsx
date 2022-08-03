@@ -1,60 +1,84 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import Button from 'react-bootstrap/Button';
+import Badge from 'react-bootstrap/Badge';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
+import { AiOutlineWhatsApp } from "react-icons/ai";
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
+import Image from 'react-bootstrap/Image'
 
-function getLogo() {
-  const logoStyle = { margin: "30px", alignItems: "center" };
+function NavBar(props) {
+  const navigationItems = navItems(props.paginaAtual);
   return (
-    <div className="row" style={logoStyle}>
-      <span className="navbar-prefixo">Valoriza</span>
-      <span className="navbar-sufixo">Cred</span>
-    </div>
+    <Navbar className="navbar">
+      {logo}
+      <Container>
+        <Nav variant="tabs">
+          {navigationItems.map(item => 
+            navItem(item, props)
+          )}
+        </Nav>
+        {whatsAppButton(props)}
+      </Container>
+    </Navbar>
   );
+}
+
+const logo = <Image src={`/images/logo.png`}/>
+
+function navItems(paginaAtual){
+  const itens = [
+    criarItem("Produtos", 0, paginaAtual),
+    criarItem("Quem somos", 1, paginaAtual),
+  ];
+  return itens;
+}
+
+function navItem(item, props){ 
+  return (
+    <Nav.Item style={{ backgroundColor: item.style.backgroundColor }}>
+      <Nav.Link
+        style={{ color: item.style.color }}
+        onClick={() => props.mudarPagina(item.index)}>
+        {item.descricao}
+      </Nav.Link>
+    </Nav.Item>);
+}
+  
+function criarItem(desc, index, paginaAtual){
+  return {
+    descricao: desc,
+    index: index,
+    style: styleAba(paginaAtual, index),
+  }
 }
 
 function styleAba(paginaAtual, index) {
-  return paginaAtual == index 
-  ? {backgroundColor: '#335AFF', color: 'white'}
+  return paginaAtual === index 
+  ? {backgroundColor: 'black', color: 'white'}
   : {backgroundColor: 'lightgrey', color: 'black'} ;
 }
 
-function NavBar(props) {
-  function criarItem(desc, index){
-    return {
-      descricao: desc,
-      index: index,
-      style: styleAba(props.paginaAtual, index),
-    }
-  }
+function whatsAppButton(props){
+  return <OverlayTrigger
+    placement="bottom"
+    delay={{ show: 250, hide: 400 }}
+    overlay={renderTooltip}>
+      <h1>
+        <Badge style={{ paddingTop: "2px" }} pill bg="success" onClick={props.onClickWhatsApp}>
+          <AiOutlineWhatsApp />
+        </Badge>
+      </h1>
+  </OverlayTrigger>;
+    
+  } 
 
-  const itemsAba = [
-    criarItem("Produtos", 0),
-    criarItem("Quem somos", 1),
-  ];  
-
-  return (
-    <Navbar className="navbar">
-      <Container>
-        {getLogo()}  
-        <Nav variant="tabs">
-
-          {itemsAba.map(item => 
-            <Nav.Item style={{backgroundColor: item.style.backgroundColor}}>
-              <Nav.Link 
-                style={{color: item.style.color}} 
-                onClick={() => props.mudarPagina(item.index)}>
-                  {item.descricao}
-              </Nav.Link>
-            </Nav.Item>
-          )}
-
-        </Nav>
-        <Button variant="primary" onClick={props.onClickWhatsApp}>Clique aqui para falar pelo WhatsApp</Button>
-      </Container>
-      </Navbar>
+  const renderTooltip = (props) => (
+    <Tooltip style={{backgroundColor: "green"}} id="button-tooltip" {...props}>
+      Iniciar conversa no WhatsApp
+    </Tooltip>
   );
-}
 
 export default NavBar;
