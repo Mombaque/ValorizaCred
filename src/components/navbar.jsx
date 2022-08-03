@@ -14,6 +14,7 @@ function NavBar(props) {
   return (
     <Navbar className="navbar">
       {logo}
+      <div style={{width: "50%"}}></div>
       <Container>
         <Nav variant="tabs">
           {navigationItems.map(item => 
@@ -57,7 +58,7 @@ function criarItem(desc, index, paginaAtual){
 
 function styleAba(paginaAtual, index) {
   return paginaAtual === index 
-  ? {backgroundColor: 'black', color: 'white'}
+  ? {backgroundColor: 'rgb(52, 58, 64)', color: 'white'}
   : {backgroundColor: 'lightgrey', color: 'black'} ;
 }
 

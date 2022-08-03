@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 class CardProduto extends Component {
   render() {
     return (
-      <Card>
+      <Card style={{backgroundColor: "#f8f9fa"}}>
         <Card.Header className="card-header">
           <h4>{this.props.icon}{' '}{this.props.header}</h4>
         </Card.Header>
@@ -14,7 +14,7 @@ class CardProduto extends Component {
           <Card.Text className="card-texto">
             {this.props.text}
           </Card.Text>
-        <Button variant="dark">Saiba mais</Button>
+          <Button variant="dark">Saiba mais</Button>
         </Card.Body>
       </Card>
     );
