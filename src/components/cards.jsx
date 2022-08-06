@@ -22,16 +22,18 @@ class Cards extends Component {
             header="Empréstimo consignado"
             title="Para aposentados/pensionistas do INSS e servidores públicos"
             text="Com atendimento personalizado e condições especiais. Portabilidade com juros reduzidos - já pagou 12 parcelas ou mais? Faça uma simulação sem compromisso e veremos a possibilidade."
+            url=""
           />
         </Col>
 
         <Col sm>
           <CardProduto
             alt="empresarios"
-            icon={<MdAttachMoney/>}
-            header="Capital de giro"
-            title="Para pequenas e médias empresas"
-            text="Com créditos de R$50.000 até R$500.000 para empresas com no mínimo 5 anos de fundação e com faturamento anual a partir de R$500.000"
+            icon={<MdOutlineHouse/>}
+            header="Financiamento de imóvel"
+            title="Vai comprar um imóvel financiado?"
+            text="Receba simulação dos 3 principais bancos. Compare, escolha e solicite aqui!"
+            url="https://loja.franq.com.br/pb/heleide-borges/financiamentos/97"
           />
         </Col>
 
@@ -42,6 +44,7 @@ class Cards extends Component {
             header="Empréstimo com garantia de imóvel"
             title="Quer investir, quitar dívidas, reorganizar a vida financeira?"
             text="Seu imóvel quitado vale crédito. Com uma das melhores taxas de juros do mercado e até 15 anos para pagar."
+            url="https://loja.franq.com.br/pb/heleide-borges/emprestimos/55"
           />
         </Col>
 
@@ -52,6 +55,7 @@ class Cards extends Component {
             header="Crédito com garantia de veículo"
             title="Possui um veículo e precisa de dinheiro?"
             text="Resolva seu problema e continue com seu veículo."
+            url="https://loja.franq.com.br/pb/heleide-borges/emprestimos/1"
             />
         </Col>
       </Row>

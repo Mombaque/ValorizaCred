@@ -5,6 +5,7 @@ import Produtos from "./produtos";
 import QuemSomos from "./quem-somos"
 import {Helmet} from "react-helmet";
  
+const WHATSAPP_URL = "https://wa.me/5515996907254";
 
 function Main(){
   const [page, setPage] = useState(0);
@@ -48,7 +49,7 @@ const floactionWhatsAppButton =
   </a>;
 
 function onClickWhatsApp() {
-  window.open("https://wa.me/5515996907254", "_blank");
+  window.open(WHATSAPP_URL, "_blank");
 }
 
 export default Main;

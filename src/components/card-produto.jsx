@@ -14,10 +14,16 @@ class CardProduto extends Component {
           <Card.Text className="card-texto">
             {this.props.text}
           </Card.Text>
-          <Button variant="dark">Saiba mais</Button>
+          <Button variant="dark" onClick={() => this.navigate(this.props.url)}>Saiba mais</Button>
         </Card.Body>
       </Card>
     );
+  }
+
+  navigate(url){
+    const WHATSAPP_URL = "https://wa.me/5515996907254";
+    url = url === '' ? WHATSAPP_URL : url;
+    window.open(url, "_blank");    
   }
 }
 
