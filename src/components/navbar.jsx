@@ -68,7 +68,7 @@ function whatsAppButton(props){
     delay={{ show: 250, hide: 400 }}
     overlay={renderTooltip}>
       <h1>
-        <Badge style={{ paddingTop: "2px" }} pill bg="success" onClick={props.onClickWhatsApp}>
+        <Badge style={{ paddingTop: "2px", cursor: "pointer" }} pill bg="success" onClick={props.onClickWhatsApp}>
           <AiOutlineWhatsApp />
         </Badge>
       </h1>
