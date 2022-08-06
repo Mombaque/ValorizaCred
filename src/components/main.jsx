@@ -3,6 +3,8 @@ import NavBar from "./navbar";
 import Footer from "./footer";
 import Produtos from "./produtos";
 import QuemSomos from "./quem-somos"
+import {Helmet} from "react-helmet";
+ 
 
 function Main(){
   const [page, setPage] = useState(0);
@@ -12,6 +14,14 @@ function Main(){
   
   return (
     <div className="App">
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>ValorizaCred - Financeira</title>
+          <link rel="canonical" href="http://mysite.com/example" />
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-203501474-1">
+          </script>
+
+      </Helmet>
       <NavBar 
         onClickWhatsApp={onClickWhatsApp} 
         paginaAtual={page}
