@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import {WHATSAPP_URL} from '../App'
 
 class CardProduto extends Component {
   render() {
     return (
-      <Card style={{backgroundColor: "#f8f9fa"}}>
+      <Card style={{backgroundColor: "rgb(223, 241, 247)"}}>
         <Card.Header className="card-header">
           <h4>{this.props.icon}{' '}{this.props.header}</h4>
         </Card.Header>
@@ -21,8 +22,7 @@ class CardProduto extends Component {
   }
 
   navigate(url){
-    const WHATSAPP_URL = "https://wa.me/5515996907254";
-    url = url === '' ? WHATSAPP_URL : url;
+    url = !url || url === '' ? WHATSAPP_URL : url;
     window.open(url, "_blank");    
   }
 }

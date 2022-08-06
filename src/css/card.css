@@ -2,7 +2,6 @@
   width: 500px;
   height: 300px;
   margin: 5%;
-  background-color: aqua;
 }
 
 .card-header{
@@ -16,5 +15,6 @@
 }
 
 .card-texto{
-  height: 90px;
+  height: auto;
+  /* height: 80px; */
 }

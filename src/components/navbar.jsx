@@ -9,8 +9,11 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import Image from 'react-bootstrap/Image'
 
+const logo = <Image src={`/images/logo.png`}/>
+
 function NavBar(props) {
   const navigationItems = navItems(props.paginaAtual);
+  
   return (
     <Navbar className="navbar">
       {logo}
@@ -26,8 +29,6 @@ function NavBar(props) {
     </Navbar>
   );
 }
-
-const logo = <Image src={`/images/logo.png`}/>
 
 function navItems(paginaAtual){
   const itens = [

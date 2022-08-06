@@ -15,20 +15,26 @@ class Cards extends Component {
   render() {
     return (<Container>
       <Row>
-        <Col sm>
+      <Col sm>
           <CardProduto
-            alt="dinheiro"
             icon={<MdAttachMoney/>}
-            header="Empréstimo consignado"
-            title="Para aposentados/pensionistas do INSS e servidores públicos"
-            text="Com atendimento personalizado e condições especiais. Portabilidade com juros reduzidos - já pagou 12 parcelas ou mais? Faça uma simulação sem compromisso e veremos a possibilidade."
-            url=""
+            header="Cartão de crédito consignado e cartão benefício"
+            title="Agora você pode ter dois cartões para compras e saque"
+            text="Para aposentados e pensionistas do INSS, beneficiários do LOAS e servidores públicos estaduais."
           />
         </Col>
 
         <Col sm>
           <CardProduto
-            alt="empresarios"
+            icon={<MdAttachMoney/>}
+            header="Empréstimo consignado"
+            title="Para aposentados/pensionistas do INSS e servidores públicos"
+            text="Com atendimento personalizado e condições especiais. Portabilidade com juros reduzidos - já pagou 12 parcelas ou mais? Faça uma simulação sem compromisso e veremos a possibilidade."
+          />
+        </Col>
+
+        <Col sm>
+          <CardProduto
             icon={<MdOutlineHouse/>}
             header="Financiamento de imóvel"
             title="Vai comprar um imóvel financiado?"
@@ -39,7 +45,6 @@ class Cards extends Component {
 
         <Col sm>
           <CardProduto
-            alt="casa"
             icon={<MdOutlineHouse/>}
             header="Empréstimo com garantia de imóvel"
             title="Quer investir, quitar dívidas, reorganizar a vida financeira?"
@@ -50,12 +55,11 @@ class Cards extends Component {
 
         <Col sm>
           <CardProduto
-            alt="veículo"
             icon={<MdDirectionsCar/>}
             header="Crédito com garantia de veículo"
             title="Possui um veículo e precisa de dinheiro?"
             text="Resolva seu problema e continue com seu veículo."
-            url="https://loja.franq.com.br/pb/heleide-borges/emprestimos/1"
+            url="https://loja.franq.com.br/pb/heleide-borges/emprestimos/120"
             />
         </Col>
       </Row>

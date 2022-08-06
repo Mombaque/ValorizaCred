@@ -4,17 +4,23 @@ import Footer from "./footer";
 import Produtos from "./produtos";
 import QuemSomos from "./quem-somos"
 import {Helmet} from "react-helmet";
- 
-const WHATSAPP_URL = "https://wa.me/5515996907254";
+import {WHATSAPP_URL} from '../App'
+import { useMediaQuery } from 'react-responsive'
+
 
 function Main(){
   const [page, setPage] = useState(0);
   
   const mudarPagina = (newPage) => setPage(newPage);
   const children = page === 0 ? <Produtos/> : <QuemSomos/>;
-  
+
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1224px)'
+  })
+  const appClass = isDesktopOrLaptop ? "App" : "AppMobile";
+
   return (
-    <div className="App">
+    <div className={appClass}>
       <Helmet>
           <meta charSet="utf-8" />
           <title>ValorizaCred - Financeira</title>

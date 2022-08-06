@@ -1,15 +1,13 @@
 .App {
   text-align: center;
   background-color: white;
+  width: 100%;
 }
 
-.quem-somos-texto{
-  width: 90%;
+.AppMobile {
   text-align: center;
-  border-radius: 1%;
-  border: 1px solid #CCC;
-  margin: 2%;
-  padding: 2%;
+  background-color: white;
+  width: fit-content;
 }
 
 .botao-padrao{
@@ -81,6 +79,9 @@ body{
   background-color: rgb(239, 245, 245);
   padding: 1%;
   display: flex;
+  color: white;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(1, 29, 128) 16%, rgba(0,212,255,1) 100%);
 }
 
 .footer-item{
@@ -94,3 +95,12 @@ body{
   align-items: center;
 }
 
+.quem-somos-texto{
+  width: 90%;
+  text-align: center;
+  border-radius: 1%;
+  border: 1px solid #CCC;
+  margin: 2%;
+  padding: 2%;
+  background: rgb(223, 241, 247)
+}
