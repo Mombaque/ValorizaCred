@@ -10,13 +10,10 @@
   width: fit-content;
 }
 
-.botao-padrao{
-  background-color:#335AFF;
-  border-radius: 2%;
-  border: 0px;
-  color:white;
-  padding: 10px;
-  margin: 15px;
+body{
+  font-family:Verdana, Geneva, sans-serif;
+  font-size:18px;
+  background-color:#CCC;
 }
 
 .navbar{
@@ -25,32 +22,8 @@
   margin-bottom: 25px;
 }
 
-.navbar-prefixo{
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.navbar-sufixo{
-  font-Size: 30px;
-  font-weight: bold;
-  color: #335AFF;
-}
-
-.navbar-opcao{
-  font-Size: 20px;
-  font-weight: bold;
-  margin-top: 20px;
-  margin-right: 10%;
-}
-
 .my-badge{
   color: white;
-}
-
-body{
-	font-family:Verdana, Geneva, sans-serif;
-	font-size:18px;
-	background-color:#CCC;
 }
 
 .float{
