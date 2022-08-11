@@ -16,7 +16,11 @@ export default function MenuLateral(props) {
     >
       <List>
         {['Produtos', 'Quem somos'].map((text, index) => (
-          <ListItem key={text} disablePadding onClick={() => props.mudarPagina(index)}>
+          <ListItem key={text} disablePadding 
+            onClick={() => {
+              props.setMenuLateral(false);
+              return props.mudarPagina(index);
+            }}>
             <ListItemButton>
               <ListItemIcon>
                 {/* {index % 2 === 0 ? <InboxIcon /> : <MailIcon />} */}

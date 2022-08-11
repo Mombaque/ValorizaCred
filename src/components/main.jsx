@@ -13,7 +13,9 @@ function Main(){
   const [page, setPage] = useState(0);
   const [menuLateralAberto, setMenuLateral] = useState(false);
 
-  const tratarMenu = (abrir) => setMenuLateral(abrir);
+  const tratarMenu = (abrir) => {
+    return setMenuLateral(abrir);
+  };
   const mudarPagina = (newPage) => setPage(newPage);
 
   const children = page === 0 ? <Produtos/> : <QuemSomos/>;

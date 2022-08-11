@@ -11,7 +11,9 @@ function NavBar(props) {
     <Navbar className="navbar">
       {logo}
       <div style={{width: "90%"}}></div>
-      <h4><MdMenu onClick={() => props.setMenuLateral(true)}></MdMenu></h4>
+      <h1>
+        <MdMenu 
+          onClick={() => props.setMenuLateral(true)}></MdMenu></h1>
     </Navbar>
   );
 }

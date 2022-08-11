@@ -17,3 +17,10 @@
 .card-texto{
   height: auto;
 }
+
+.botao-saiba-mais{
+  position: absolute;
+  left: 200px;
+  bottom: 5px;
+
+}

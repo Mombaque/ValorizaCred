@@ -15,7 +15,7 @@ class CardProduto extends Component {
           <Card.Text className="card-texto">
             {this.props.text}
           </Card.Text>
-          <Button variant="dark" onClick={() => this.navigate(this.props.url)}>Saiba mais</Button>
+          <Button className="botao-saiba-mais" variant="dark" onClick={() => this.navigate(this.props.url)}>Saiba mais</Button>
         </Card.Body>
       </Card>
     );
