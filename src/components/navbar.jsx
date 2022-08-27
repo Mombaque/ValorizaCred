@@ -2,14 +2,13 @@ import React from "react";
 import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image';
 import {MdMenu} from 'react-icons/md';
-
+import '../css/navbar.css'
 
 function NavBar(props) {
-  const logo = <Image src={`/images/logo.png`}/>
 
   return (
-    <Navbar className="navbar">
-      {logo}
+    <Navbar variant="dark" className="navbar">
+      <Image src={`/images/logo.png`} style={{height: "10%"}}/>
       <div style={{width: "90%"}}></div>
       <h1>
         <MdMenu 

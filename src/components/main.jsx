@@ -7,7 +7,8 @@ import QuemSomos from "./quem-somos"
 import MenuLateral from "./menu";
 import { Helmet } from "react-helmet";
 import { useMediaQuery } from 'react-responsive'
-import { AiOutlineWhatsApp } from "react-icons/ai";
+import Slides from './slides';
+import FloatingButtonWhatsApp from "./floating-button-whatsapp";
 
 function Main(){
   const [page, setPage] = useState(0);
@@ -18,8 +19,8 @@ function Main(){
   };
   const mudarPagina = (newPage) => setPage(newPage);
 
-  const children = page === 0 ? <Produtos/> : <QuemSomos/>;
-
+  // const children = page === 0 ? <Produtos/> : <QuemSomos/>;
+  const children = <Slides></Slides>
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1224px)'
   })
@@ -52,21 +53,12 @@ function Main(){
         setMenuLateral={tratarMenu}/>
 
       <div>{children}</div>
-
-      {floactionWhatsAppButton}
-
+      <FloatingButtonWhatsApp></FloatingButtonWhatsApp>
       <Footer />
       
     </div>
   );
 }
-
-const floactionWhatsAppButton = 
-  <a href="#" class="float" onClick={onClickWhatsApp}>
-    <h2 style={{marginTop: "6px"}}>
-      <AiOutlineWhatsApp />
-    </h2>
-  </a>;
 
 function onClickWhatsApp() {
   window.open(WHATSAPP_URL, "_blank");

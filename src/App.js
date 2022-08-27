@@ -4,6 +4,8 @@ import "./css/card.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Main from "./components/main";
 import ReactGA from 'react-ga';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 export const WHATSAPP_URL = "https://wa.me/5515996907254";
 

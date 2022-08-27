@@ -37,6 +37,7 @@ export default function MenuLateral(props) {
     <div>
         <>
           <Drawer
+          variant="persistent"
             anchor='right'
             open={props.menuLateralAberto}
             onClose={() => props.setMenuLateral(false)}

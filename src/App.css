@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: white;
+  background-color: rgb(228, 222, 222);
   width: 100%;
 }
 
@@ -16,64 +16,10 @@ body{
   background-color:#CCC;
 }
 
-.navbar{
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(1, 29, 128) 16%, rgba(0,212,255,1) 100%);
-  margin-bottom: 25px;
-}
-
 .my-badge{
   color: white;
 }
 
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#0C9;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-	box-shadow: 2px 2px 3px #999;
-}
-
-.my-float{
-	margin-top:22px;
-}
-
 .cards{
   margin-right: 200%;
-}
-
-.footer{
-  margin-top: 15px;
-  background-color: rgb(239, 245, 245);
-  padding: 1%;
-  display: flex;
-  color: white;
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(1, 29, 128) 16%, rgba(0,212,255,1) 100%);
-}
-
-.footer-item{
-  flex: 1;
-}
-
-.quem-somos-container{
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.quem-somos-texto{
-  width: 90%;
-  text-align: center;
-  border-radius: 1%;
-  border: 1px solid #CCC;
-  margin: 2%;
-  padding: 2%;
-  background: rgb(223, 241, 247)
 }
