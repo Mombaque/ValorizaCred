@@ -3,6 +3,7 @@
 }
 
 .float{
+    z-index: 10;
 	position:fixed;
 	width:90px;
 	height:90px;

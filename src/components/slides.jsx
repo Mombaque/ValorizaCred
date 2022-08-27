@@ -14,19 +14,19 @@ function Slides(){
 
     return (
 
-        <Carousel className="slide">
+        <Carousel variant="dark" className="slide">
 
-            {itens.map((x) => (<Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={`/images/${x.image}`}
-                    // src={`/images/main_desktop.png`}
-                    alt="First slide"
-                />
-                <Carousel.Caption>
-                    <Button onClick={() => navigate(x.url)}>SAIBA MAIS</Button>
-                </Carousel.Caption>
-            </Carousel.Item>))}
+            {itens.map((x) => (
+                <Carousel.Item>
+                    <img 
+                        src={`/images/${x.image}`}
+                        // src={`/images/main_desktop.png`}
+                        alt="First slide"
+                    />
+                    <Carousel.Caption>
+                        <Button onClick={() => navigate(x.url)}><h3>Saiba mais</h3></Button>
+                    </Carousel.Caption>
+                </Carousel.Item>))}
 
         </Carousel>
     )
