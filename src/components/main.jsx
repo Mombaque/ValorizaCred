@@ -19,8 +19,8 @@ function Main(){
   };
   const mudarPagina = (newPage) => setPage(newPage);
 
-  // const children = page === 0 ? <Produtos/> : <QuemSomos/>;
-  const children = <Slides></Slides>
+  const children = page === 0 ? <Slides/> : <QuemSomos/>;
+  // const children = <Slides></Slides>
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1224px)'
   })

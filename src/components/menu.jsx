@@ -6,14 +6,14 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
+import { MdPerson, MdAttachMoney } from "react-icons/md";
 
 export default function MenuLateral(props) {
 
   const list = () => (
     <Box
       sx={'auto'}
-      role="presentation"
-    >
+      role="presentation">
       <List>
         {['Produtos', 'Quem somos'].map((text, index) => (
           <ListItem key={text} disablePadding 
@@ -23,7 +23,7 @@ export default function MenuLateral(props) {
             }}>
             <ListItemButton>
               <ListItemIcon>
-                {/* {index % 2 === 0 ? <InboxIcon /> : <MailIcon />} */}
+                {index % 2 === 0 ? <MdAttachMoney /> : <MdPerson />}
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>
@@ -40,8 +40,7 @@ export default function MenuLateral(props) {
           variant="persistent"
             anchor='right'
             open={props.menuLateralAberto}
-            onClose={() => props.setMenuLateral(false)}
-          >
+            onClose={() => props.setMenuLateral(false)}>
             {list()}
           </Drawer>
         </>
