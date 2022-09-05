@@ -8,10 +8,7 @@ class CardProduto extends Component {
   render() {
     return (
       <>
-        <Card>
-          {/* <Card.Header className="card-header">
-            <h4>{this.props.icon}{' '}{this.props.header}</h4>
-          </Card.Header> */}
+        <Card class="card-produto">
           <img className="card-imagem" 
             onClick={() => this.navigate(this.props.url)}
             src={`/images/${this.props.image}`} 
@@ -22,8 +19,6 @@ class CardProduto extends Component {
               {this.props.text}
             </Card.Text>
           </Card.Body>
-          {/* <Button className="botao-saiba-mais" variant="dark" 
-            onClick={() => this.navigate(this.props.url)}>Saiba mais</Button> */}
         </Card>
       </>
     );

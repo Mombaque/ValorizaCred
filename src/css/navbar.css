@@ -1,7 +1,21 @@
 
-.navbar{
+.navbar-desktop{
     background: rgb(0, 138, 198 );
     margin-bottom: 25px;
+}
+
+.navbar-mobile{
+    background: rgb(0, 138, 198 );
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.menu-desktop {
+
+}
+
+.menu-mobile {
+    margin-right: 50%;
 }
 
 .logo {

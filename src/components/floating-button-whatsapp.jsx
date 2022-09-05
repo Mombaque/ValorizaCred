@@ -7,10 +7,14 @@ function onClickWhatsApp() {
     window.open(WHATSAPP_URL, "_blank");
 }
 
-const FloatingButtonWhatsApp = (props) => (
-    <a href="#" class={props.isDesktop ? "float" : "float float-mobile"} onClick={onClickWhatsApp}>
-        <h1 className="icone"><AiOutlineWhatsApp /></h1>
-    </a>
-)
+function FloatingButtonWhatsApp(props) {
+    const css = props.isDesktop ? "float" : "float float-mobile";
+    
+    return (
+        <a href="#" class={css} onClick={onClickWhatsApp}>
+            <h1 className="icone"><AiOutlineWhatsApp /></h1>
+        </a>
+    );
+}
 
 export default FloatingButtonWhatsApp;

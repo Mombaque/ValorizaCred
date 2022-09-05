@@ -48,11 +48,12 @@ function Main(){
         setMenuLateral={tratarMenu}/>
 
       <NavBar 
+        isDesktop={isDesktop}
         onClickWhatsApp={onClickWhatsApp} 
         setMenuLateral={tratarMenu}/>
 
       <div>{page === 0 ? paginaProdutos : <QuemSomos/>}</div>
-      <FloatingButtonWhatsApp isDesktop={isDesktop}></FloatingButtonWhatsApp>
+      <FloatingButtonWhatsApp isDesktop={isDesktop}/>
       
       {isDesktop ? <Footer /> : <></>}
       
