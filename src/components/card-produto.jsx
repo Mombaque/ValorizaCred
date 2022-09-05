@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import {WHATSAPP_URL} from '../App'
 import '../css/card-produto.css'
