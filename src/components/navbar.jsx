@@ -8,7 +8,9 @@ function NavBar(props) {
 
   return (
     <Navbar variant="dark" className="navbar">
-      <Image src={`/images/logo.png`} style={{height: "10%"}}/>
+      <div>
+        <Image className="logo" src={`/images/logo.png`} style={{height: "10%"}}/>
+      </div>
       <div style={{width: "90%"}}></div>
       <h1>
         <MdMenu 
