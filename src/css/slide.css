@@ -1,12 +1,12 @@
 .slide {
     padding: 0 5% 5% 5%;
 }
-  
-Button{
-  margin-top: 10px;
-}
 
 .container{
   display: flex;
   flex-flow: column;
+}
+
+Button {
+  margin-top: 10px;
 }

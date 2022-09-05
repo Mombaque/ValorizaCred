@@ -2,14 +2,13 @@ import React, { useState } from "react";
 import {WHATSAPP_URL} from '../App'
 import NavBar from "./navbar";
 import Footer from "./footer";
-import Produtos from "./produtos";
 import QuemSomos from "./quem-somos"
 import MenuLateral from "./menu";
 import { Helmet } from "react-helmet";
 import { useMediaQuery } from 'react-responsive'
 import Slides from './slides';
 import FloatingButtonWhatsApp from "./floating-button-whatsapp";
-
+import Cards from './cards'
 function Main(){
   const [page, setPage] = useState(0);
   const [menuLateralAberto, setMenuLateral] = useState(false);
@@ -19,13 +18,13 @@ function Main(){
   };
   const mudarPagina = (newPage) => setPage(newPage);
 
-  const children = page === 0 ? <Slides/> : <QuemSomos/>;
-  // const children = <Slides></Slides>
-  const isDesktopOrLaptop = useMediaQuery({
+  
+  const isDesktop = useMediaQuery({
     query: '(min-width: 1224px)'
   })
-
-  const appClass = isDesktopOrLaptop ? "App" : "AppMobile";
+  
+  const appClass = isDesktop ? "App" : "AppMobile";
+  const paginaProdutos = isDesktop ? <Slides/> : <Cards/>;
 
   return (
     <div className={appClass}>
@@ -52,9 +51,10 @@ function Main(){
         onClickWhatsApp={onClickWhatsApp} 
         setMenuLateral={tratarMenu}/>
 
-      <div>{children}</div>
-      <FloatingButtonWhatsApp></FloatingButtonWhatsApp>
-      <Footer />
+      <div>{page === 0 ? paginaProdutos : <QuemSomos/>}</div>
+      <FloatingButtonWhatsApp isDesktop={isDesktop}></FloatingButtonWhatsApp>
+      
+      {isDesktop ? <Footer /> : <></>}
       
     </div>
   );

@@ -7,8 +7,8 @@ function onClickWhatsApp() {
     window.open(WHATSAPP_URL, "_blank");
 }
 
-const FloatingButtonWhatsApp = () => (
-    <a href="#" class="float" onClick={onClickWhatsApp}>
+const FloatingButtonWhatsApp = (props) => (
+    <a href="#" class={props.isDesktop ? "float" : "float float-mobile"} onClick={onClickWhatsApp}>
         <h1 className="icone"><AiOutlineWhatsApp /></h1>
     </a>
 )
