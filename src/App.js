@@ -11,7 +11,6 @@ export const WHATSAPP_URL = "https://wa.me/5515996907254";
 
 export const PRODUTOS = [
     {image: 'emprestimo.jpeg'},
-    {image: 'credito-garantia-imovel.jpeg', url: "https://loja.franq.com.br/pb/heleide-borges/emprestimos/55"},
     {image: 'credito-imobiliario.jpeg', url: "https://loja.franq.com.br/pb/heleide-borges/financiamentos/97"},
     {image: 'fgts.png'},
     {image: 'credito-garantia-veiculo.jpeg'},
