@@ -5,17 +5,17 @@ import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/slide.css'
 
-function Slides(){
+function Slides(props){
     return (
         <Carousel variant="dark" className="slide">
             {PRODUTOS.map((x) => (
                 <Carousel.Item>
                     <div className="container">
-                        <img onClick={() => navigate(x.url)} 
+                        <img className='card-image' onClick={() => navigate(x.url)} 
                             src={`/images/${x.image}`} 
                             alt={x.image}/>
                         <Button onClick={() => navigate(x.url)}>
-                            <h2>Saiba mais</h2>
+                            <h2>Clique aqui para saber mais!</h2>
                         </Button>
                     </div>
                 </Carousel.Item>))}

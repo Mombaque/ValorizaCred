@@ -33,13 +33,6 @@ function Main(){
           <title>ValorizaCred - Financeira</title>
           <link rel="canonical" href="http://mysite.com/example" />
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-203501474-1"></script>
-          {/* <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){window.dataLayer.push({'event': 'new_subscriber'})}
-            gtag('js', new Date());
-            
-            gtag('config', 'UA-203501474-1');
-          </script> */}
       </Helmet>
 
       <MenuLateral 

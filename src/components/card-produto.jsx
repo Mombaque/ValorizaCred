@@ -3,19 +3,18 @@ import Card from 'react-bootstrap/Card';
 import {WHATSAPP_URL} from '../App'
 import '../css/card-produto.css'
 
-class CardProduto extends Component {
-  render() {
+function CardProduto(props) {
     return (
       <>
-        <Card class="card-produto">
-          <img className="card-imagem" 
-            onClick={() => this.navigate(this.props.url)}
-            src={`/images/${this.props.image}`} 
-            alt={this.props.image}/>
+        <Card>
+          <img 
+            onClick={() => navigate(props.url)}
+            src={`/images/${props.image}`} 
+            alt={props.image}/>
           <Card.Body>
-            <Card.Title className="card-title">{this.props.title}</Card.Title>
-            <Card.Text className="card-texto">
-              {this.props.text}
+            <Card.Title>{props.title}</Card.Title>
+            <Card.Text>
+              {props.text}
             </Card.Text>
           </Card.Body>
         </Card>
@@ -23,10 +22,9 @@ class CardProduto extends Component {
     );
   }
 
-  navigate(url){
-    url = !url || url === '' ? WHATSAPP_URL : url;
-    window.open(url, "_blank");    
-  }
+function navigate(url){
+  url = !url || url === '' ? WHATSAPP_URL : url;
+  window.open(url, "_blank");    
 }
 
 export default CardProduto;
