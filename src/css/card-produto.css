@@ -1,10 +1,10 @@
 .card-produto {
-    width: 50%;
+    /* width: 35%; */
 }
 
 .card-imagem {
     margin-left: 5%;
-    width: 95%;
-    height: 95%;
+    width: 90%;
+    height: 90%;
     background-color: rgb(223, 241, 247)
 }

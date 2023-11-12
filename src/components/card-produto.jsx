@@ -6,8 +6,8 @@ import '../css/card-produto.css'
 function CardProduto(props) {
     return (
       <>
-        <Card>
-          <img 
+        <Card className="card-produto">
+          <img className="card-imagem"
             onClick={() => navigate(props.url)}
             src={`/images/${props.image}`} 
             alt={props.image}/>

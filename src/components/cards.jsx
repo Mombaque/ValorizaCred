@@ -5,11 +5,16 @@ import Container from 'react-bootstrap/Container';
 import {PRODUTOS} from '../App'
 
 function Cards() {
-  return (<Container>
-    <Row>
-      {PRODUTOS.map(x => (<CardProduto image={x.image}/>))}
-    </Row>
-    </Container>)
+  return (
+    <>
+        {PRODUTOS.map(x => (<CardProduto image={x.image}/>))}
+    </>
+    // <Container>
+    //     <Row>
+          
+    //     </Row>
+    //   </Container>
+    )
 }
 
 export default Cards;
