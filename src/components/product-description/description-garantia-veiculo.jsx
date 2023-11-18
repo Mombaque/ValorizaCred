@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Button } from 'react-bootstrap';
 import "../../css/product-description.css";
 
 function DescriptionGarantiaVeiculo(props)
@@ -11,15 +10,9 @@ function DescriptionGarantiaVeiculo(props)
             <h6>✅ Prazos flexíveis: Adequação das parcelas às suas necessidades.</h6>
             <h6>✅ Mantenha a posse: Utilize seu veículo como garantia, sem a necessidade de abrir mão dele.</h6>
             <h6>Seu veículo, seu crédito, e você no controle!</h6>
-            <Button onClick={() => navigate(props.url)}>
-                Clique aqui para saber mais 
-            </Button>
+            <CustomButton url={props.url} />
         </>
     )
 }
-
-function navigate(url){
-    window.open(url, "_blank");    
-} 
 
 export default DescriptionGarantiaVeiculo;
