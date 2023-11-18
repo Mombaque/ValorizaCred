@@ -13,11 +13,11 @@ export const WHATSAPP_URL = "https://wa.me/5515996907254";
 export const PRODUTOS = [
     {
         image: 'credito-garantia-imovel.png', 
-        description: <DescriptionGarantiaVeiculo url="https://loja.franq.com.br/pb/heleide-borges/emprestimos/120"/>
+        description: <DescriptionGarantiaVeiculo url="https://loja.franq.com.br/pb/heleide-borges/emprestimos/55"/>
     },
     {
         image: 'credito-garantia-veiculo.jpeg', 
-        description: <DescriptionGarantiaImovel url="https://loja.franq.com.br/pb/heleide-borges/emprestimos/55"/>
+        description: <DescriptionGarantiaImovel url="https://loja.franq.com.br/pb/heleide-borges/emprestimos/120"/>
     },
     {image: 'emprestimo.jpeg'},
     {image: 'credito-imobiliario.png'},
