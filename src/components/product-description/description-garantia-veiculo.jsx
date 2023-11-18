@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import "../../css/product-description.css";
+import React from "react";
+import CustomButton from "../custom-button.jsx";
 
 function DescriptionGarantiaVeiculo(props)
 {

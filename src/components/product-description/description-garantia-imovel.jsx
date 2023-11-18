@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import { Button } from 'react-bootstrap';
 import "../../css/product-description.css";
-import CustomButton from "../button-description";
+import CustomButton from "../custom-button";
 
-function DescriptionGarantiaImovel()
+function DescriptionGarantiaImovel(props)
 {
     return (
         <>
