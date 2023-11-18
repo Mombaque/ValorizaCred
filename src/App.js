@@ -1,19 +1,27 @@
 import React from "react";
+import Main from "./components/main";
+import ReactGA from 'react-ga';
+import DescriptionGarantiaVeiculo from '../src/components/product-description/description-garantia-veiculo';
+import DescriptionGarantiaImovel from "./components/product-description/description-garantia-imovel";
 import "./App.css";
 import "./css/card.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import Main from "./components/main";
-import ReactGA from 'react-ga';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
 
 export const WHATSAPP_URL = "https://wa.me/5515996907254";
 
 export const PRODUTOS = [
+    {
+        image: 'credito-garantia-imovel.png', 
+        description: <DescriptionGarantiaVeiculo url="https://loja.franq.com.br/pb/heleide-borges/emprestimos/120"/>
+    },
+    {
+        image: 'credito-garantia-veiculo.jpeg', 
+        description: <DescriptionGarantiaImovel url="https://loja.franq.com.br/pb/heleide-borges/emprestimos/55"/>
+    },
     {image: 'emprestimo.jpeg'},
-    {image: 'credito-imobiliario.jpeg', url: "https://loja.franq.com.br/pb/heleide-borges/financiamentos/97"},
+    {image: 'credito-imobiliario.png'},
     {image: 'fgts.png'}, 
-    {image: 'credito-garantia-veiculo.jpeg'},
 ];
 
 const App = () => {

@@ -14,10 +14,12 @@ function NavBar(props) {
         <Image className="logo" src={`/images/logo.png`} />
       </div>
       <div style={{width: "80%"}}></div>
-      <h1>
+      {/* <h1>
         <MdMenu 
           className={menuCss}
-          onClick={() => props.setMenuLateral(true)}></MdMenu></h1>
+          onClick={() => props.setMenuLateral(true)}>
+        </MdMenu>
+      </h1> */}
     </Navbar>
   );
 }

@@ -11,12 +11,7 @@ function CardProduto(props) {
             onClick={() => navigate(props.url)}
             src={`/images/${props.image}`} 
             alt={props.image}/>
-          <Card.Body>
-            <Card.Title>{props.title}</Card.Title>
-            <Card.Text>
-              {props.text}
-            </Card.Text>
-          </Card.Body>
+          {props.description}          
         </Card>
       </>
     );
