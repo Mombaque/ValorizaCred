@@ -14,9 +14,13 @@ function Slides(props){
                         <img className='card-image' onClick={() => navigate(x.url)} 
                             src={`/images/${x.image}`} 
                             alt={x.image}/>
-                        <Button onClick={() => navigate(x.url)}>
-                            <h2>Clique aqui para saber mais!</h2>
-                        </Button>
+                        
+                            {
+                                x.description 
+                                    ? x.description 
+                                    : <Button onClick={() => navigate(x.url)}><h2>Clique aqui para saber mais!</h2></Button>
+                            }
+
                     </div>
                 </Carousel.Item>))}
         </Carousel>
