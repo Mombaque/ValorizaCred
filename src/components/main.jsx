@@ -9,6 +9,9 @@ import { useMediaQuery } from 'react-responsive'
 import Slides from './slides';
 import FloatingButtonWhatsApp from "./floating-button-whatsapp";
 import Cards from './cards'
+import BaseProductIcon from "./product-icons/base-product-icon";
+import ProductIconsContainer from "./product-icons/product-icons-container";
+import Playground from "./playground";
 function Main(){
   const [page, setPage] = useState(0);
   const [menuLateralAberto, setMenuLateral] = useState(false);
@@ -24,7 +27,6 @@ function Main(){
   })
   
   const appClass = isDesktop ? "App" : "AppMobile";
-  const paginaProdutos = isDesktop ? <Slides/> : <Cards/>;
 
   return (
     <div className={appClass}>
@@ -45,13 +47,20 @@ function Main(){
         onClickWhatsApp={onClickWhatsApp} 
         setMenuLateral={tratarMenu}/>
 
-      <div>{page === 0 ? paginaProdutos : <QuemSomos/>}</div>
+      {/* {<ProductIconsContainer />} */}
+      {/* <Playground></Playground> */}
+      {/* <div>{page === 0 ? paginaProdutos : <QuemSomos/>}</div> */}
+      {buscarPagina(isDesktop)}
       <FloatingButtonWhatsApp isDesktop={isDesktop}/>
       
       {isDesktop ? <Footer /> : <></>}
       
     </div>
   );
+}
+
+function buscarPagina(isDesktop) {
+  return isDesktop ? <Slides /> : <Cards />;
 }
 
 function onClickWhatsApp() {

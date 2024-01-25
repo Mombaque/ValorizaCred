@@ -1,0 +1,29 @@
+.icon-container {
+	display: flex;
+    flex-direction: column;
+	margin-right: 100px;
+}
+
+.floating-product-icon {
+	width:140px;
+	height:100px;
+	color:#FFF;
+	border-radius:10px;
+	color: black;	
+}
+
+.text {
+	margin-left: -30%;
+	word-wrap: break-word;
+	color: black;
+	font-size: 25px;
+}
+
+.vehicle-icon-color {
+	background-color:rgb(0, 204, 17);
+
+}
+
+.house-icon-color {
+	background-color:rgb(255, 81, 0);
+}

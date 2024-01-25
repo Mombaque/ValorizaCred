@@ -5,7 +5,7 @@ import {PRODUTOS} from '../App'
 function Cards() {
   return (
     <>
-        {PRODUTOS.map(x => (<CardProduto image={x.image} description={x.description}/>))}
+        {PRODUTOS.map(p => (<CardProduto produto={p}/>))}
     </>
     )
 }

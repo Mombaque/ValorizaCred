@@ -5,26 +5,26 @@ import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/slide.css'
 
-function Slides(props){
+function Slides(){
     return (
         <Carousel variant="dark" className="slide">
-            {PRODUTOS.map((x) => (
+            {PRODUTOS.map((product) => (
                 <Carousel.Item>
-                    <div className="container">
-                        <img className='card-image' onClick={() => navigate(x.url)} 
-                            src={`/images/${x.image}`} 
-                            alt={x.image}/>
-                        
-                            {
-                                x.description 
-                                    ? x.description 
-                                    : <Button onClick={() => navigate(x.url)}><h2>Clique aqui para saber mais!</h2></Button>
-                            }
-
+                    <div className="slide-container">
+                        <img className='card-image' onClick={() => navigate(product.url)} 
+                            src={`/images/${product.image}`} 
+                            alt={product.image}/>
+                        {description(product)}
                     </div>
                 </Carousel.Item>))}
         </Carousel>
     )
+}
+
+function description(produto) {
+    return produto.description
+        ? produto.description
+        : <Button onClick={() => navigate(produto.url)}><h2>Clique aqui para saber mais!</h2></Button>;
 }
 
 function navigate(url){
