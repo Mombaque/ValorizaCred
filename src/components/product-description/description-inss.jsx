@@ -8,6 +8,7 @@ function DescriptionInss(props)
         <div style={{
             display: "flex", 
             flexDirection: "column",
+            marginLeft: "5%"
         }}
         >
             <h8>✅Crédito pessoal, com garantia de <b>veículo</b>🚗 ou <b>imóvel</b>🏠</h8>

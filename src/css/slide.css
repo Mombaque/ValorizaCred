@@ -4,7 +4,7 @@
 
 .slide-container {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
 }
 
 Button {
@@ -13,12 +13,20 @@ Button {
   margin-right: 20%;
 }
 
-.card-image {
+.card-image-column {
   cursor: pointer;
   width: 50%;
   height: 50%;
   margin-left: 25%;
 }
+
+.card-image-row {
+  cursor: pointer;
+  width: 50%;
+  height: 50%;
+  margin-left: 5%;
+}
+
 
 .slide-item-column {
   flex-direction: column;

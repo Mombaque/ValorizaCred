@@ -2,9 +2,9 @@ import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import { WHATSAPP_URL } from '../App';
 import { Button } from 'react-bootstrap';
+import {PRODUTOS} from './models/products';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/slide.css'
-import {PRODUTOS} from './models/products';
 
 function Slides(){
     return (
@@ -16,11 +16,13 @@ function Slides(){
 }
 
 function getSlideItem(product) {
-    const classe = `slide-container slide-item-${(product.isRow ? 'row' : 'column')}`;
+    const orientation = product.isRow ? 'row' : 'column';
+    const classe = `slide-container slide-item-${orientation}`;
+    const imageMarginLeft = `card-image-${orientation}`
 
     return <Carousel.Item>
         <div className={classe}>
-            <img className='card-image' onClick={() => navigate(product.url)}
+            <img className={imageMarginLeft} onClick={() => navigate(product.url)}
                 src={`/images/${product.image}`}
                 alt={product.image} />
             {description(product)}
