@@ -1,7 +1,7 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
-import {WHATSAPP_URL} from '../App'
-import '../css/card-produto.css'
+import {WHATSAPP_URL} from '../../App'
+import '../../css/card-produto.css'
 
 function CardProduto(props) {
     return (

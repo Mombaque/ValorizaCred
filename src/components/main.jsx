@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet";
 import { useMediaQuery } from 'react-responsive'
 import Slides from './slides';
 import FloatingButtonWhatsApp from "./floating-button-whatsapp";
-import Cards from './cards'
+import Cards from './card/cards'
 import BaseProductIcon from "./product-icons/base-product-icon";
 import ProductIconsContainer from "./product-icons/product-icons-container";
 import Playground from "./playground";

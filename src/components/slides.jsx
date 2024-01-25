@@ -1,24 +1,31 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
-import { WHATSAPP_URL, PRODUTOS } from '../App';
+import { WHATSAPP_URL } from '../App';
 import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/slide.css'
+import {PRODUTOS} from './models/products';
 
 function Slides(){
     return (
         <Carousel variant="dark" className="slide">
             {PRODUTOS.map((product) => (
-                <Carousel.Item>
-                    <div className="slide-container">
-                        <img className='card-image' onClick={() => navigate(product.url)} 
-                            src={`/images/${product.image}`} 
-                            alt={product.image}/>
-                        {description(product)}
-                    </div>
-                </Carousel.Item>))}
+                getSlideItem(product)))}
         </Carousel>
     )
+}
+
+function getSlideItem(product) {
+    const classe = `slide-container slide-item-${(product.isRow ? 'row' : 'column')}`;
+
+    return <Carousel.Item>
+        <div className={classe}>
+            <img className='card-image' onClick={() => navigate(product.url)}
+                src={`/images/${product.image}`}
+                alt={product.image} />
+            {description(product)}
+        </div>
+    </Carousel.Item>;
 }
 
 function description(produto) {

@@ -4,7 +4,7 @@
 
 .slide-container {
   display: flex;
-  flex-flow: column;
+  /* flex-direction: column; */
 }
 
 Button {
@@ -18,4 +18,12 @@ Button {
   width: 50%;
   height: 50%;
   margin-left: 25%;
+}
+
+.slide-item-column {
+  flex-direction: column;
+}
+
+.slide-item-row {
+  flex-direction: row;
 }
