@@ -17,8 +17,7 @@ function DescriptionInss(props)
             <h8>✅Correspondente bancário certificado pela Febraban</h8>
 
             <h7>
-                Nosso diferencial reside no fornecimento de opções de crédito que proporcionam valores liberados mais vantajosos 
-                e taxas significativamente inferiores quando comparadas ao crédito pessoal convencional. 
+                Nosso diferencial está no fornecimento de opções de crédito que proporcionam valores liberados mais vantajosos e taxas significativamente inferiores quando comparadas ao crédito pessoal convencional. Nossa atuação abrange uma ampla gama de instituições financeiras, respaldada por uma sólida presença no mercado.
             </h7>
             <h7>
                 Nossa atuação abrange uma ampla gama de instituições financeiras, 

@@ -9,14 +9,14 @@ export const PRODUTOS = [
         isRow: true, 
         description: <DescriptionInss />
     },
-    // {
-    //     image: 'credito-garantia-imovel.png', 
-    //     description: <DescriptionGarantiaImovel url="https://loja.franq.com.br/pb/heleide-borges/emprestimos/55"/>
-    // },
-    // {
-    //     image: 'credito-garantia-veiculo.jpeg', 
-    //     description: <DescriptionGarantiaVeiculo url="https://loja.franq.com.br/pb/heleide-borges/emprestimos/120"/>
-    // },
-    // // {image: 'emprestimo.jpeg'},
-    // {image: 'fgts.png'}, 
+    {
+        image: 'credito-garantia-imovel.png', 
+        description: <DescriptionGarantiaImovel url="https://loja.franq.com.br/pb/heleide-borges/emprestimos/55"/>
+    },
+    {
+        image: 'credito-garantia-veiculo.jpeg', 
+        description: <DescriptionGarantiaVeiculo url="https://loja.franq.com.br/pb/heleide-borges/emprestimos/120"/>
+    },
+    // {image: 'emprestimo.jpeg'},
+    {image: 'fgts.png'}, 
 ];
