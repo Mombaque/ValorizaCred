@@ -27,6 +27,7 @@ function Main(){
   })
   
   const appClass = isDesktop ? "App" : "AppMobile";
+  const googleAnalyticsId = 'UA-203501474-1';
 
   return (
     <div className={appClass}>
@@ -34,13 +35,14 @@ function Main(){
           <meta charSet="utf-8" />
           <title>ValorizaCred - Financeira</title>
           <link rel="canonical" href="" />
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-203501474-1">
-          </script>
-          <script>{
-            `window.dataLayer = window.dataLayer || [];
-            function gtag(){window && window.dataLayer && window.dataLayer.push({data:"test"})}
-            gtag('js', new Date());
-            gtag('config', 'UA-203501474-1');`}
+          <script async src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}></script>
+          <script>
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', "${googleAnalyticsId}");
+            `}
           </script>
       </Helmet>
 
