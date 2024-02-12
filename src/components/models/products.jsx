@@ -18,5 +18,5 @@ export const PRODUTOS = [
         description: <DescriptionGarantiaVeiculo url="https://loja.franq.com.br/pb/heleide-borges/emprestimos/120"/>
     },
     // {image: 'emprestimo.jpeg'},
-    {image: 'fgts.png'}, 
+    {image: 'fgts.jpeg'}, 
 ];
