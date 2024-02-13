@@ -33,6 +33,10 @@ function Main(){
     <div className={appClass}>
       <Helmet>
           <meta charSet="utf-8" />
+          <meta
+            name="keywords"
+            content="financiamento, aposentado, pensionista, veículo, financiadoras, crédito, financeiras, funcionário, público, online, imóvel, pessoal, garantia"
+          />
           <title>ValorizaCred - Financeira</title>
           <link rel="canonical" href="" />
           <script async src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}></script>
