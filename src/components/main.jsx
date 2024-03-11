@@ -21,7 +21,6 @@ function Main(){
   };
   const mudarPagina = (newPage) => setPage(newPage);
 
-  
   const isDesktop = useMediaQuery({
     query: '(min-width: 1224px)'
   })
@@ -73,7 +72,10 @@ function Main(){
 }
 
 function buscarPagina(isDesktop) {
-  return isDesktop ? <Slides /> : <Cards />;
+  const queryParameters = new URLSearchParams(window.location.search)
+  const id = queryParameters.get("id");
+
+  return isDesktop ? <Slides productId={id}/> : <Cards productId={id}/>;
 }
 
 function onClickWhatsApp() {

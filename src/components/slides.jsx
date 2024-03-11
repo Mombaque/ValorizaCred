@@ -6,11 +6,16 @@ import {PRODUTOS} from './models/products';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/slide.css'
 
-function Slides(){
+function Slides(props){
+
+    let products = props.productId ? PRODUTOS.filter(x => x.id == props.productId) : PRODUTOS;
+
+    let productSlideItems = products.map((product) => (
+        getSlideItem(product)));
+        
     return (
         <Carousel variant="dark" className="slide">
-            {PRODUTOS.map((product) => (
-                getSlideItem(product)))}
+            {productSlideItems}
         </Carousel>
     )
 }
