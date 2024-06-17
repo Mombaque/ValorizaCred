@@ -5,7 +5,7 @@ import "./css/card.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export const WHATSAPP_URL = "https://wa.me/5515996907254";
+export const WHATSAPP_URL = "https://wa.me/5515998312788";
 
 const App = () => {
     // const TRACKING_ID = "UA-203501474-1";
