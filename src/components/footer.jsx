@@ -48,7 +48,7 @@ const getContact = () => {
         </h5>
         <ul className="thumbnail-widget">
           {getPhoneItem("(15) 3491-1468")}
-          {getPhoneItem("(15) 99690-7254")}
+          {getPhoneItem("(15) 99825-6777")}
         </ul>
       </div>
     </div>
