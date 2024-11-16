@@ -20,7 +20,7 @@ const getAddress = () => {
         <h5 className="widget-title">
           <span>ValorizaCred</span>
         </h5>
-        <p>Rua Dorival de Barros Leite, 55, Centro - Salto de Pirapora </p>
+        <p>Rua Dr. Luiz Mendes de Almeida, 571 -  Largo do Divino  Sorocaba - SP</p>
       </div>
     </div>
   );
@@ -47,7 +47,6 @@ const getContact = () => {
           <span>Contato</span>
         </h5>
         <ul className="thumbnail-widget">
-          {getPhoneItem("(15) 3491-1468")}
           {getPhoneItem("(15) 99825-6777")}
         </ul>
       </div>
