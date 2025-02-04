@@ -7,9 +7,7 @@ import DescriptionGarantiaVeiculo from "../product-description/description-garan
 export const PRODUTOS = [
     {
         id: 1,
-        image: 'principal.png',
-        isRow: true, 
-        description: <Description />
+        image: 'principal.jpg',
     },
     {
         id: 2,
@@ -19,10 +17,6 @@ export const PRODUTOS = [
     },
     {
         id: 3,
-        image: 'credito-garantia-imovel.png', 
-    },
-    {
-        id: 4,
         image: 'credito-garantia-veiculo.jpeg', 
     },
     {image: 'fgts.jpeg'}, 

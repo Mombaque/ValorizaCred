@@ -59,9 +59,6 @@ function Main(){
         onClickWhatsApp={onClickWhatsApp} 
         setMenuLateral={tratarMenu}/>
 
-      {/* {<ProductIconsContainer />} */}
-      {/* <Playground></Playground> */}
-      {/* <div>{page === 0 ? paginaProdutos : <QuemSomos/>}</div> */}
       {buscarPagina(isDesktop)}
       <FloatingButtonWhatsApp isDesktop={isDesktop}/>
       

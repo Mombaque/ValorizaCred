@@ -30,7 +30,7 @@ function getSlideItem(product) {
             <img className={imageMarginLeft} onClick={() => navigate(product.url)}
                 src={`/images/${product.image}`}
                 alt={product.image} />
-            {description(product)}
+            {/* {description(product)} */}
         </div>
     </Carousel.Item>;
 }

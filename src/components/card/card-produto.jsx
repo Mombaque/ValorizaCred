@@ -11,7 +11,7 @@ function CardProduto(props) {
             onClick={() => navigate(props.produto.url)}
             src={`/images/${props.produto.image}`} 
             alt={props.produto.image}/>
-          {props.produto.description}          
+          {/* {props.produto.description}           */}
         </Card>
       </>
     );
