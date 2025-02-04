@@ -1,4 +1,5 @@
 import React from "react";
+import Description from "../product-description/description";
 import DescriptionInss from "../product-description/description-inss";
 import DescriptionGarantiaImovel from "../product-description/description-garantia-imovel"
 import DescriptionGarantiaVeiculo from "../product-description/description-garantia-veiculo"
@@ -6,7 +7,9 @@ import DescriptionGarantiaVeiculo from "../product-description/description-garan
 export const PRODUTOS = [
     {
         id: 1,
-        image: 'principal.jpg',
+        image: 'principal.png',
+        isRow: true, 
+        description: <Description />
     },
     {
         id: 2,
