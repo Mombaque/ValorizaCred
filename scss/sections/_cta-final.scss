@@ -1,0 +1,38 @@
+// ============================================================
+// CTA FINAL
+// ============================================================
+
+#cta-final {
+  padding-block: clamp(72px, 10vw, 112px);
+  background: $color-bg;
+  text-align: center;
+}
+
+.cta-final__inner {
+  max-width: 620px;
+  margin-inline: auto;
+
+  h2 {
+    margin-bottom: 16px;
+  }
+
+  p {
+    color: $color-text-muted;
+    font-size: 1rem;
+    margin-bottom: 36px;
+  }
+}
+
+.cta-final__trust {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: $fs-small;
+  color: $color-text-muted;
+
+  svg {
+    color: $color-whatsapp;
+  }
+}

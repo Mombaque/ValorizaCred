@@ -1,0 +1,109 @@
+// ============================================================
+// HERO
+// ============================================================
+
+#hero {
+  background: $color-primary;
+  background-image:
+    radial-gradient(ellipse at 70% 50%, rgba($color-secondary, 0.12) 0%, transparent 60%),
+    linear-gradient(135deg, #1B3A6B 0%, #0f2244 100%);
+  color: #fff;
+  padding-block: clamp(72px, 12vw, 140px);
+  overflow: hidden;
+  position: relative;
+
+  // decorative circle
+  &::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: rgba($color-secondary, 0.06);
+    pointer-events: none;
+  }
+}
+
+.hero__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+
+  @media (max-width: $bp-md) {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+.hero__content {
+  h1 {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    margin-bottom: 36px;
+    max-width: 520px;
+
+    @media (max-width: $bp-md) {
+      margin-inline: auto;
+    }
+  }
+
+  .badge {
+    background: rgba(255, 255, 255, 0.12);
+    color: $color-secondary;
+    border-color: rgba($color-secondary, 0.5);
+  }
+}
+
+.hero__cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  @media (max-width: $bp-md) {
+    justify-content: center;
+  }
+}
+
+.hero__trust {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  font-size: $fs-small;
+  color: rgba(255, 255, 255, 0.65);
+
+  @media (max-width: $bp-md) {
+    justify-content: center;
+  }
+
+  svg {
+    color: $color-secondary;
+    flex-shrink: 0;
+  }
+}
+
+.hero__visual {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  @media (max-width: $bp-md) {
+    display: none;
+  }
+}
+
+.hero__img {
+  width: 100%;
+  max-width: 460px;
+  border-radius: $radius-lg;
+  display: block;
+  object-fit: cover;
+}

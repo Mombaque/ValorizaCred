@@ -1,0 +1,40 @@
+// ============================================================
+// FOOTER
+// ============================================================
+
+.site-footer {
+  background: #0f1f3d;
+  color: rgba(255, 255, 255, 0.75);
+  padding-block: 48px;
+  font-size: $fs-small;
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__brand {
+  font-family: $font-display;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.footer__info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.footer__legal {
+  margin-top: 8px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.4);
+  line-height: 1.6;
+  max-width: 680px;
+}

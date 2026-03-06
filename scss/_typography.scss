@@ -1,0 +1,64 @@
+// ============================================================
+// TIPOGRAFIA
+// ============================================================
+
+h1, h2, h3 {
+  font-family: $font-display;
+  font-weight: 700;
+  line-height: 1.25;
+  color: $color-primary;
+}
+
+h1 { font-size: $fs-hero; }
+h2 { font-size: $fs-h2; }
+h3 { font-size: $fs-h3; }
+
+p {
+  font-family: $font-body;
+  font-size: $fs-body;
+  line-height: 1.7;
+  color: $color-text;
+}
+
+.text-muted {
+  color: $color-text-muted;
+  font-size: $fs-small;
+}
+
+.text-center { text-align: center; }
+.text-white   { color: #fff; }
+
+.section-label {
+  display: block;
+  font-family: $font-body;
+  font-size: $fs-small;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $color-secondary;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  margin-bottom: 48px;
+
+  &--center {
+    text-align: center;
+  }
+}
+
+// Badge
+.badge {
+  display: inline-block;
+  background: rgba($color-secondary, 0.15);
+  color: $color-secondary-dk;
+  border: 1px solid rgba($color-secondary, 0.4);
+  font-family: $font-body;
+  font-size: $fs-small;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}

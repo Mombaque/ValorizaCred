@@ -1,0 +1,23 @@
+// ============================================================
+// MAIN ENTRY POINT — Valoriza Cred
+// ============================================================
+
+// 1. Tokens (deve ser primeiro — variáveis usadas em todo projeto)
+@import 'variables';
+
+// 2. Base
+@import 'reset';
+@import 'typography';
+
+// 3. Componentes globais
+@import 'components';
+
+// 4. Seções
+@import 'sections/header';
+@import 'sections/hero';
+@import 'sections/for-who';
+@import 'sections/how-it-works';
+@import 'sections/differentials';
+@import 'sections/testimonials';
+@import 'sections/cta-final';
+@import 'sections/footer';

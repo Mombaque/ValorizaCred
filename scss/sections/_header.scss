@@ -1,0 +1,61 @@
+// ============================================================
+// HEADER / NAV
+// ============================================================
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid $color-border;
+  box-shadow: $shadow-sm;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  gap: 24px;
+}
+
+.header__logo {
+  font-family: $font-display;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: $color-primary;
+  text-decoration: none;
+  white-space: nowrap;
+
+  span {
+    color: $color-secondary;
+  }
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+
+  @media (max-width: $bp-md) {
+    display: none;
+  }
+
+  a {
+    font-size: $fs-small;
+    font-weight: 600;
+    color: $color-text;
+    transition: color $transition-base;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
+.header__cta {
+  @media (max-width: $bp-md) {
+    display: none;
+  }
+}

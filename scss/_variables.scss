@@ -1,0 +1,48 @@
+// ============================================================
+// TOKENS DE DESIGN — Valoriza Cred
+// ============================================================
+
+// Cores
+$color-primary:     #1B3A6B;   // azul escuro — confiança, seriedade
+$color-primary-lt:  #254d8f;   // azul claro para hover
+$color-secondary:   #C8A84B;   // dourado — credibilidade, valor
+$color-secondary-dk:#a8883a;   // dourado escuro
+$color-bg:          #F8F7F4;   // off-white quente
+$color-surface:     #FFFFFF;
+$color-text:        #1A1A1A;
+$color-text-muted:  #6B6B6B;
+$color-border:      #E2E0DB;
+$color-whatsapp:    #25D366;
+$color-whatsapp-dk: #1DAA54;
+
+// Tipografia
+$font-display: 'Merriweather', serif;
+$font-body:    'Source Sans 3', sans-serif;
+
+// Escala de fonte
+$fs-hero:   clamp(2rem, 5vw, 3.25rem);
+$fs-h2:     clamp(1.5rem, 3vw, 2.25rem);
+$fs-h3:     1.25rem;
+$fs-body:   1.0625rem;   // ~17px — acessibilidade para público 50+
+$fs-small:  0.875rem;
+
+// Espaçamento
+$section-gap: clamp(64px, 10vw, 120px);
+$container:   1120px;
+$gutter:      clamp(16px, 4vw, 32px);
+$radius:      8px;
+$radius-lg:   16px;
+
+// Breakpoints
+$bp-sm: 480px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+
+// Sombras
+$shadow-sm:  0 2px 8px rgba(0,0,0,0.06);
+$shadow-md:  0 4px 20px rgba(0,0,0,0.10);
+$shadow-lg:  0 8px 40px rgba(0,0,0,0.12);
+
+// Transições
+$transition-base: 0.2s ease;
+$transition-slow: 0.55s ease;

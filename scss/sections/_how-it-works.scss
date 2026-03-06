@@ -1,0 +1,85 @@
+// ============================================================
+// COMO FUNCIONA
+// ============================================================
+
+#how-it-works {
+  padding-block: $section-gap;
+  background: $color-bg;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  counter-reset: steps;
+  position: relative;
+
+  // linha conectora desktop
+  &::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: calc(16.66% + 20px);
+    right: calc(16.66% + 20px);
+    height: 2px;
+    background: linear-gradient(90deg, $color-secondary 0%, rgba($color-secondary, 0.3) 100%);
+    pointer-events: none;
+
+    @media (max-width: $bp-md) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $bp-md) {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+.step {
+  counter-increment: steps;
+  text-align: center;
+  padding: 0 12px;
+
+  @media (max-width: $bp-md) {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    text-align: left;
+    padding: 0;
+  }
+
+  &__number {
+    width: 56px;
+    height: 56px;
+    background: $color-primary;
+    color: #fff;
+    border-radius: 50%;
+    font-family: $font-display;
+    font-weight: 700;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    position: relative;
+    z-index: 1;
+    flex-shrink: 0;
+
+    @media (max-width: $bp-md) {
+      margin: 0;
+    }
+  }
+
+  &__body {
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: $fs-small;
+      color: $color-text-muted;
+      line-height: 1.65;
+    }
+  }
+}
