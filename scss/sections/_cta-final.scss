@@ -9,7 +9,7 @@
 }
 
 .cta-final__inner {
-  max-width: 620px;
+  max-width: 780px;
   margin-inline: auto;
 
   h2 {
@@ -23,6 +23,24 @@
   }
 }
 
+.cta-final__intro {
+  max-width: 620px;
+  margin-inline: auto;
+}
+
+.cta-final__fallback {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 28px;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
 .cta-final__trust {
   margin-top: 20px;
   display: flex;
@@ -31,8 +49,11 @@
   gap: 6px;
   font-size: $fs-small;
   color: $color-text-muted;
+  max-width: 620px;
+  margin-inline: auto;
 
   svg {
     color: $color-whatsapp;
+    flex-shrink: 0;
   }
 }

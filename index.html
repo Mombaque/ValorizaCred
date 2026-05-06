@@ -343,31 +343,123 @@
     </section>
 
     <!-- ═══════════════════════════════════════════════════
-         CTA FINAL
+         CTA FINAL / FORMULÁRIO DE SIMULAÇÃO
     ═══════════════════════════════════════════════════ -->
     <section id="cta-final" aria-labelledby="cta-title">
       <div class="container">
         <div class="cta-final__inner reveal">
-          <span class="section-label">Sem compromisso</span>
-          <h2 id="cta-title">Simule agora e descubra quanto você pode receber</h2>
-          <p>Atendimento rápido, sem burocracia, em todo o Brasil. Fale agora com um especialista.</p>
-          <a
-            href="https://wa.me/5515998256777?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Valoriza%20Cred%20e%20gostaria%20de%20simular%20um%20cr%C3%A9dito%20consignado."
-            class="btn btn--whatsapp btn--lg"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Iniciar simulação pelo WhatsApp"
-          >
-            <svg class="icon-whatsapp" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-            </svg>
-            Falar no WhatsApp
-          </a>
+          <div class="cta-final__intro">
+            <span class="section-label">Sem compromisso</span>
+            <h2 id="cta-title">Solicite uma simulação gratuita</h2>
+            <p>Preencha seus dados básicos e um especialista da Valoriza Cred entrará em contato pelo WhatsApp.</p>
+          </div>
+
+          <form class="lead-form" id="lead-form" novalidate>
+            <div class="lead-form__grid">
+              <div class="lead-form__field lead-form__field--full">
+                <label for="lead-name">Nome completo</label>
+                <input type="text" id="lead-name" name="name" autocomplete="name" required />
+              </div>
+
+              <div class="lead-form__field">
+                <label for="lead-phone">WhatsApp</label>
+                <input type="tel" id="lead-phone" name="phone" inputmode="tel" autocomplete="tel" placeholder="(15) 99825-6777" required />
+              </div>
+
+              <div class="lead-form__field">
+                <label for="lead-profile">Você é</label>
+                <select id="lead-profile" name="profile" required>
+                  <option value="">Selecione uma opção</option>
+                  <option value="aposentado_inss">Aposentado INSS</option>
+                  <option value="pensionista_inss">Pensionista INSS</option>
+                  <option value="servidor_ativo">Servidor público ativo</option>
+                  <option value="servidor_aposentado">Servidor público aposentado</option>
+                  <option value="outro">Outro</option>
+                </select>
+              </div>
+
+              <div class="lead-form__field">
+                <label for="lead-state">Estado</label>
+                <select id="lead-state" name="state" required>
+                  <option value="">UF</option>
+                  <option value="AC">AC</option>
+                  <option value="AL">AL</option>
+                  <option value="AP">AP</option>
+                  <option value="AM">AM</option>
+                  <option value="BA">BA</option>
+                  <option value="CE">CE</option>
+                  <option value="DF">DF</option>
+                  <option value="ES">ES</option>
+                  <option value="GO">GO</option>
+                  <option value="MA">MA</option>
+                  <option value="MT">MT</option>
+                  <option value="MS">MS</option>
+                  <option value="MG">MG</option>
+                  <option value="PA">PA</option>
+                  <option value="PB">PB</option>
+                  <option value="PR">PR</option>
+                  <option value="PE">PE</option>
+                  <option value="PI">PI</option>
+                  <option value="RJ">RJ</option>
+                  <option value="RN">RN</option>
+                  <option value="RS">RS</option>
+                  <option value="RO">RO</option>
+                  <option value="RR">RR</option>
+                  <option value="SC">SC</option>
+                  <option value="SP">SP</option>
+                  <option value="SE">SE</option>
+                  <option value="TO">TO</option>
+                </select>
+              </div>
+
+              <div class="lead-form__field">
+                <label for="lead-credit-amount">Valor desejado</label>
+                <select id="lead-credit-amount" name="creditAmount">
+                  <option value="">Ainda não sei</option>
+                  <option value="ate_5000">Até R$ 5.000</option>
+                  <option value="5000_15000">R$ 5.000 a R$ 15.000</option>
+                  <option value="15000_30000">R$ 15.000 a R$ 30.000</option>
+                  <option value="acima_30000">Acima de R$ 30.000</option>
+                </select>
+              </div>
+
+              <div class="lead-form__field lead-form__field--full lead-form__honeypot" aria-hidden="true">
+                <label for="lead-company">Empresa</label>
+                <input type="text" id="lead-company" name="company" tabindex="-1" autocomplete="off" />
+              </div>
+            </div>
+
+            <label class="lead-form__consent" for="lead-consent">
+              <input type="checkbox" id="lead-consent" name="consent" required />
+              <span>Autorizo a Valoriza Cred a entrar em contato comigo por WhatsApp ou telefone para tratar da minha simulação.</span>
+            </label>
+
+            <button class="btn btn--primary btn--lg btn--full" type="submit">Solicitar simulação gratuita</button>
+
+            <p class="lead-form__message" id="lead-form-message" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="cta-final__fallback">
+            <p>Prefere falar agora?</p>
+            <a
+              href="https://wa.me/5515998256777?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Valoriza%20Cred%20e%20gostaria%20de%20simular%20um%20cr%C3%A9dito%20consignado."
+              class="btn btn--whatsapp"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Iniciar simulação pelo WhatsApp"
+            >
+              <svg class="icon-whatsapp" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              Falar no WhatsApp
+            </a>
+          </div>
+
           <p class="cta-final__trust">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
             </svg>
-            Crédito sujeito à análise e aprovação
+            Crédito sujeito à análise e aprovação. Seus dados serão usados apenas para contato sobre a simulação.
           </p>
         </div>
       </div>
