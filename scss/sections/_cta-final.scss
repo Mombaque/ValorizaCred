@@ -23,16 +23,43 @@
   }
 }
 
+.cta-final__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.cta-final__privacy {
+  margin-top: 16px;
+  font-size: $fs-small;
+  color: $color-text-muted;
+
+  a {
+    color: $color-primary;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+
+    &:hover {
+      color: $color-primary-lt;
+    }
+  }
+}
+
 .cta-final__trust {
-  margin-top: 20px;
+  margin-top: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
   font-size: $fs-small;
   color: $color-text-muted;
+  max-width: 620px;
+  margin-inline: auto;
 
   svg {
     color: $color-whatsapp;
+    flex-shrink: 0;
   }
 }

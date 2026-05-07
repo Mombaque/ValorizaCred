@@ -35,3 +35,16 @@ if (hero && stickyCta) {
 
   heroObserver.observe(hero);
 }
+
+// 4. Tracking de conversão Google Ads — CTAs WhatsApp
+document.querySelectorAll('a[data-track^="whatsapp"]').forEach(link => {
+  link.addEventListener('click', () => {
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'conversion', {
+        send_to: 'AW-10778111618/whatsapp_click',
+        value: 1.0,
+        currency: 'BRL'
+      });
+    }
+  });
+});
