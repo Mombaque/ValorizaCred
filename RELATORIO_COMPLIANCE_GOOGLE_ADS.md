@@ -142,16 +142,16 @@
 **CTAs WhatsApp (4 ocorrências idênticas):**
 ```html
 <!-- Header -->
-<a href="https://wa.me/5515998256777?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Valoriza%20Cred%20e%20gostaria%20de%20simular%20um%20cr%C3%A9dito%20consignado." class="btn btn--whatsapp header__cta">WhatsApp</a>
+<a href="https://wa.me/5515998312788?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Valoriza%20Cred%20e%20gostaria%20de%20simular%20um%20cr%C3%A9dito%20consignado." class="btn btn--whatsapp header__cta">WhatsApp</a>
 
 <!-- Hero -->
-<a href="https://wa.me/5515998256777?text=..." class="btn btn--whatsapp btn--lg">Falar no WhatsApp agora</a>
+<a href="https://wa.me/5515998312788?text=..." class="btn btn--whatsapp btn--lg">Falar no WhatsApp agora</a>
 
 <!-- CTA Final -->
-<a href="https://wa.me/5515998256777?text=..." class="btn btn--whatsapp btn--lg">Falar no WhatsApp</a>
+<a href="https://wa.me/5515998312788?text=..." class="btn btn--whatsapp btn--lg">Falar no WhatsApp</a>
 
 <!-- Sticky Mobile -->
-<a href="https://wa.me/5515998256777?text=..." class="btn btn--whatsapp">Simular no WhatsApp</a>
+<a href="https://wa.me/5515998312788?text=..." class="btn btn--whatsapp">Simular no WhatsApp</a>
 ```
 
 **Sticky CTA mobile:**
